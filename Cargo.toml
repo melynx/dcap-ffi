@@ -1,0 +1,15 @@
+[package]
+name = "dcap-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+alloy   = { version = "0.6.4", features = ["full"] }
+dcap-rs = { git = "https://github.com/automata-network/dcap-rs.git" }
+hex = "0.4.3"
+log = "0.4.22"
+tokio = "1.41.1"
+x509-parser = "0.16.0"
